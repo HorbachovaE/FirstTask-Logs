@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Date;
 
 public class LogLine {
@@ -10,5 +11,8 @@ public class LogLine {
         String IdType = Id +Type;
         return IdType;
     }
-
+public boolean getEquals ( LogType type, String id)
+{
+    return type == this.Type && id.equals(this.Id);
+}
 }
